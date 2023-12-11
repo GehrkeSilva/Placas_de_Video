@@ -1,0 +1,31 @@
+POST http://localhost:3333/placa_de_video
+Content-Type: application/json
+
+{
+    "marca": "placa_de_video: Nvidia rtx 3080",
+    "fabricante": "fabricante: Gigabyte",
+    "preço": "R$3000"
+}
+
+###
+
+GET http://localhost:3333/placa_de_video
+
+###
+
+GET http://localhost:3333/placa_de_video?search=IFMS
+
+###
+
+PUT http://localhost:3333/Loja_de_hardware/554ec149-431c-4d69-b464-f913dc8591a4
+Content-Type: application/json
+
+{
+    "marca": "placa_de_video: Nvidia rtx 4070",
+    "fabricante": "Fabricante Galax",
+    "preço": "R$5000"
+}
+
+###
+
+DELETE http://localhost:3333/Loja_de_hardware/554ec149-431c-4d69-b464-f913dc8591a4
